@@ -30,7 +30,7 @@ class App extends React.Component {
     // If the strike count is equal to 2 then the next click will be a strike out...  
     this.setState({balls: 0, strikes: 0}) // so you reset the count to zeros
   } else { // If NOT then..
-    this.setState({ strikes: this.state.strike + 1});// you'll add 1
+    this.setState({ strikes: this.state.strikes + 1});// you'll add 1
     }
   }
   
