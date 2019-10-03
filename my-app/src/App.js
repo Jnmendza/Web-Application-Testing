@@ -41,7 +41,7 @@ class App extends React.Component {
   }
 
 
-  hit = () => { // If a batter hits another one is next. Reset the count to zero.
+  hit = () => { // If a batter gets a hit another one is next at bat. Reset the count to 0
     this.setState({balls: 0, strikes: 0})
   }
 // End of functions
