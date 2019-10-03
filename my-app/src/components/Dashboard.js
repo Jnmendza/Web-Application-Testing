@@ -1,14 +1,22 @@
 import React from 'react';
 
-const Dashboard = () => {
+class Dashboard extends React.Component {
+    
+    constructor(props){
+        super(props);
+    }
+
+
+    render() {    
     return (
         <div>
             This is the Dashboard:
-            <button>Strikes</button>
-            <button>Balls</button>
-
+            <button onClick={this.props.strikeClick} >Strike</button> {/*Each button is receiving the functions from Apps.js*/}
+            <button onClick={this.props.ballClick}>Ball</button>
+            <button onClick={this.props.foulClick}>Foul</button>
+            <button onClick={this.props.hitClick}>Hit</button>
         </div>
     )
+  }
 }
-
 export default Dashboard;
